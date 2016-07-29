@@ -1,0 +1,16 @@
+{
+  "name": "api_ScreenDy_lab",
+  "version": "0.1.1",
+  "description": "Tutorial deploy an API on  AppHarbor",
+  "body-parser":"*",
+  "main": "server.js",
+  "scripts" : {
+    "start": "node server.js"
+  },
+  "author": "",
+  "licence": "ISC",
+  "dependencies": {
+    "express" : "^4.13.4", 
+    "mongodb" : "^2.1.4" 
+  }
+}
