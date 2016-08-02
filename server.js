@@ -69,9 +69,9 @@ app.post('/editannonces', function(req, res){
 //suprimer un utilisateur
 app.post('/deleteUsername', function(req, res){
 	db.collection('annonces').updateOne(
-		{ "name" : req.body['name'] },
+		{ "Type" : req.body['Type'] },
 		function(err, results){
-		res.json({ message: 'annonces: '+req.body['name']+' deleted '});
+		res.json({ message: 'annonces: '+req.body['Type']+' deleted '});
 	}
 	);
 });
