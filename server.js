@@ -38,10 +38,12 @@ app.post('/addannonces', function(req, res){
 	db.collection('annonces').insertOne(
 		{
 			"Type" : req.body['Type'],
-			"Titre" : req.body['Titre'],
 			"Categorie" : req.body['Categorie'],
-			"Localisation" : req.body['Localisation'],
-			"Description" : req.body['Description']
+			"Titre" : req.body['Titre'],
+			"Description" : req.body['Description'],
+			"Profit" : req.body['Profit'],
+			"Localisation" : req.body['Localisation']
+			
 		}, function(err, result) {
 									res.json({ message: 'your advertisement has been added' });
 		});
